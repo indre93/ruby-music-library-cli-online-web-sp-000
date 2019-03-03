@@ -59,6 +59,7 @@ class MusicLibraryController
       array.each do |song|
       puts "#{counter += 1}. #{artist.song.name} - #{artist.genre.name}"
     end
+    end
   end
 
   def list_songs_by_genre
