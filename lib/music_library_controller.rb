@@ -56,7 +56,7 @@ class MusicLibraryController
     artist = gets.chomp
     if artist = Artist.find_by_name(artist)
       artist.songs.sort_by {|song| song.name}
-      puts "#{artist.song.name} - #{artist.genre.name}"
+      puts "#{counter += 1}. #{artist.song.name} - #{artist.genre.name}"
     end
   end
 
