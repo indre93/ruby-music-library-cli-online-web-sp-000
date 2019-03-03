@@ -56,7 +56,7 @@ class MusicLibraryController
     artist = gets.chomp
     if artist = Artist.find_by_name(artist)
       artist.songs.sort_by {|song| artist.song.name }
-    end    
+    end
   end
 
   def list_songs_by_genre
