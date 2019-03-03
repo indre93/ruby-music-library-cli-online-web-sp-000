@@ -54,7 +54,7 @@ class MusicLibraryController
     counter = 0
     puts "Please enter the name of an artist:"
     artist = gets.chomp
-    if artist = list_artists.find(artist)
+    if artist = list_artists.find(artistsong.name)
       puts "#{counter += 1}. #{artist.song.name} - #{artist.genre.name}"
     end
   end
