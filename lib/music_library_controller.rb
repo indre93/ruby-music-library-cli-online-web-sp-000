@@ -53,7 +53,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     artist = gets.chomp
-    puts list_songs
+    Song.all.find {|a| a.artist.name == artist.name}
   end
 
   def list_songs_by_genre
